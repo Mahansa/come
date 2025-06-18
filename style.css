@@ -1,0 +1,275 @@
+/* Import font yang lebih modern (opsional) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Reset dasar & Gaya utama Body */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+/* Grid untuk menampung semua produk */
+.product-grid {
+    display: grid;
+    /* Membuat kolom yang responsif secara otomatis */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Styling untuk setiap kartu produk */
+.product-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.product-image {
+    position: relative;
+    width: 100%;
+    /* Menjaga rasio aspek gambar */
+    padding-top: 100%; 
+}
+
+.product-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.discount-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #e74c3c;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.product-info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Memastikan info mengisi sisa ruang */
+}
+
+.product-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #34495e;
+    /* Mencegah nama produk yang terlalu panjang */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-height: 2.7rem; /* Memberi ruang untuk 2 baris teks */
+}
+
+.product-details {
+    margin-top: auto; /* Mendorong detail ke bagian bawah kartu */
+}
+
+.product-price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #f39c12;
+    margin-top: 10px;
+}
+
+.original-price {
+    font-size: 0.8rem;
+    color: #95a5a6;
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+
+.product-meta {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    color: #7f8c8d;
+    margin-top: 8px;
+}
+
+.product-rating {
+    display: flex;
+    align-items: center;
+    color: #f1c40f;
+}
+
+.product-rating .star {
+    font-size: 1.1rem; /* Bintang lebih besar */
+}
+
+.product-location {
+    font-size: 0.8rem;
+    color: #7f8c8d;
+    margin-top: 5px;
+}
+/* Tambahkan ini di style.css */
+a.product-card-link {
+    text-decoration: none;
+    color: inherit;
+}
+/* === CSS untuk Header & Profil === */
+.main-header {
+    background-color: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #3498db;
+    text-decoration: none;
+}
+
+#main-nav .login-btn, #main-nav .logout-btn {
+    padding: 8px 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+#main-nav .login-btn:hover, #main-nav .logout-btn:hover {
+    background-color: #2980b9;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.user-profile span {
+    font-weight: 600;
+}
+
+/* === CSS untuk Modal Login === */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.modal-content h2 {
+    margin-bottom: 10px;
+}
+.modal-content p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+.form-group small {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.8rem;
+    color: #e74c3c;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}

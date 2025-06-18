@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Produk</title>
+    <link rel="stylesheet" href="style.css"> <link rel="stylesheet" href="detail-style.css"> <script src="product-detail.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">&larr; Kembali ke produk</a>
+        <div id="product-detail-container" class="product-detail-layout">
+            <div class="product-image-section">
+                <img id="product-image" src="" alt="Gambar produk">
+            </div>
+
+            <div class="product-info-section">
+                <h1 id="product-name">Nama Produk Sedang Dimuat...</h1>
+                
+                <div class="meta-info">
+                    <span>Terjual <span id="product-sold">...</span>+</span>
+                    <span class="separator">|</span>
+                    <span>★ <span id="product-rating">...</span></span>
+                </div>
+
+                <p class="product-price-detail" id="product-price">Rp0</p>
+                <div id="product-discount-info"></div>
+
+                <div class="description">
+                    <h3>Deskripsi Produk</h3>
+                    <p id="product-description">...</p>
+                </div>
+
+                <div class="purchase-action">
+                    <div class="quantity-selector">
+                        <button id="minus-btn">-</button>
+                        <input type="number" id="quantity-input" value="1" min="1">
+                        <button id="plus-btn">+</button>
+                    </div>
+                    <button id="add-to-cart-btn" class="buy-button">Masukkan Keranjang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="auth.js"></script>
+</body>
+</html>
