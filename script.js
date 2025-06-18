@@ -1,8 +1,8 @@
-// script.js (untuk Halaman Utama)
+
 
 window.addEventListener('DOMContentLoaded', () => {
 
-    // Data produk (sama seperti sebelumnya)
+   
     const products = [
       {
         id: 1,
@@ -37,19 +37,19 @@ window.addEventListener('DOMContentLoaded', () => {
         imageUrl: 'https://www.mobilebazar.com.bd/assets/img/Samsung-Galaxy-A19.webp',
         description: 'Handphone Samsung Galaxy A19 merupakan handphone terbaik di kelasnya memiliki fitur utama yaitu penyimpanan 128 GB dan ram 4GB'
       }
-      // ... produk lainnya dari contoh sebelumnya
+      // ... isi produk lain di sini bre
     ];
 
     const gridContainer = document.getElementById('product-grid');
-    if (!gridContainer) return; // Keluar jika tidak di halaman utama
+    if (!gridContainer) return; // 
 
-    // Kosongkan grid sebelum mengisi
+
     gridContainer.innerHTML = '';
 
     products.forEach(product => {
         // BUAT LINK UNTUK SETIAP KARTU
         const cardLink = document.createElement('a');
-        cardLink.href = `product.html?id=${product.id}`; // <- INI BAGIAN PENTINGNYA
+        cardLink.href = `product.html?id=${product.id}`; 
         cardLink.className = 'product-card-link';
 
         const discountPercentage = product.originalPrice ? Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100) : 0;

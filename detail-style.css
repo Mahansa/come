@@ -1,4 +1,4 @@
-/* detail-style.css */
+
 
 .back-link {
     display: inline-block;
@@ -18,7 +18,7 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
-/* Layout untuk layar lebih besar (laptop, dll) */
+
 @media (min-width: 768px) {
     .product-detail-layout {
         grid-template-columns: 1fr 1.2fr;
@@ -116,7 +116,6 @@
     font-size: 1.2rem;
     -moz-appearance: textfield; /* Firefox */
 }
-/* Sembunyikan panah di input number */
 .quantity-selector input::-webkit-outer-spin-button,
 .quantity-selector input::-webkit-inner-spin-button {
     -webkit-appearance: none;
