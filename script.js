@@ -47,6 +47,17 @@ window.addEventListener('DOMContentLoaded', () => {
         location: 'Tanggerang',
         imageUrl: 'https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTSYZZuGuZ8dcxXgFRH-LyfNo4jIH5Puv_Zd-VUsjMyAgh1ehrOSbnjanacJ1QEQCjmQDcBK8mnFMIhnr0jyQtCWUnhJWDVb-oBAOZtXqLQuhtcf4_w4H41',
         description: 'Spesifikasi - Processor : Exynos 1380 - Size : 6.4- Technology : FHD+ SA HID 120Hz 1000nits- Resolution : Infinity-O- Rear Camera Resolution : 50MP + 12MP + 5MP- Main Camera Auto Focus : Yes- Rear Camera - OIS : Yes Rear Camera - Zoom : Digital Zoom up to 10x- Front Camera Resolution : 32.0 MP- Front Camera Auto Focus : No- Video Resolution : UHD 4K (3840 x 2160)@30fps- RAM : 8GB- ROM : 128GB- SIM Tray : SIM 1 + Hybrid (SIM or MicroSD)- Network Type : 5G- USB Interface : USB Type-C- USB Version : USB 2.0- Earjack : No- Bluetooth Version : Bluetooth v5.3- NFC : Yes- Audio : Stereo- Battery Capacity : 5,000mAh, 25W Fast Charging'
+      },
+      {
+         id: 5,
+        name: 'Fortuner',
+        price: 524000000,
+        originalPrice: 530000000,
+        rating: 4.0,
+        sold: '0',
+        location: 'Jakarta',
+        imageUrl: 'https://imgs.search.brave.com/0MwNEc1Yd6MicvEOhG52b0rPzpdpwrw5bM-c34sCerc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdk/LmFlcGxjZG4uY29t/LzM3MHgyMDgvY3cv/ZWMvNDEyNzAvVG95/b3RhLUZvcnR1bmVy/LUV4dGVyaW9yLTE2/Mzg5OC5qcGc_d209/MSZxPTgw',
+        description: 'Mobil fortuner second berkualitas tinggi no minus dan siap pakai,  STNK lengkap dan pajak masih jalan'
       }
       // ... isi produk lain di sini bre
     ];
